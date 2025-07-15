@@ -1,69 +1,70 @@
-# React + TypeScript + Vite
+# Still Earth
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React site that shows you a random spot on Google Earth — places that are weird, funny, incredible or just plain WTF! 🌍😂
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What is it?
 
-## Expanding the ESLint configuration
+**Still Earth** picks a random point on the globe and throws you into Google Earth to explore some strange, funny, or curious location you probably never imagined existed.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech used
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- React  
+- Google Earth embed
+- TypeScript/TSX
+- CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## How to run it
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone the repo:  
+   ```bash
+   git clone https://github.com/andreasgrum00/stillearth.git
+   ```
+2. Go into the folder:
+   ```bash
+   cd stillearth
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+4. Start the app:
+   ```bash
+   npm run dev
+   ```
+5. Open `http://localhost:5173/` in your browser and get ready to discover the weirdest/greatest places on Earth!
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## How it works
+
+- Every time you open the site (or hit the “random” button), it picks a random place between those in a list.
+- It then embeds a Google Earth view centered on that location.
+- Sometimes you'll land on a weird building, a giant rubber duck, or just... desert. That's the fun.
+- There’s no logic to make sure it’s interesting — the chaos *is* the point.
+
+---
+
+## Future improvements
+
+- Let users submit their own weird Earth spots 🛰️  
+- Add a “history” of visited locations  
+- Option to save favorites  
+- Dark mode for your late-night weird place exploration  
+- Mobile layout tweaks  
+- Sound effects? 🤔
+
+---
+
+## Contact
+
+Built by **Andreas Grumiché** 🚀  
+GitHub: [https://github.com/andreasgrum00](https://github.com/andreasgrum00)
+
+---
+
+Enjoy the ride. Earth is weird, and that’s beautiful. 🌐💫
