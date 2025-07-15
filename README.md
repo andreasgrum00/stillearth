@@ -1,3 +1,5 @@
+![repository-open-graph-template](https://github.com/user-attachments/assets/ce8ca3eb-0476-435d-803f-4fd584a029a8)
+
 # Still Earth
 
 A simple React site that shows you a random spot on Google Earth — places that are weird, funny, incredible or just plain WTF! 🌍😂
@@ -63,7 +65,8 @@ A simple React site that shows you a random spot on Google Earth — places that
 ## Contact
 
 Built by **Andreas Grumiché** 🚀  
-GitHub: [https://github.com/andreasgrum00](https://github.com/andreasgrum00)
+**GitHub**: [https://github.com/andreasgrum00](https://github.com/andreasgrum00)<br>
+**Email**: [andreasgrumichedev@gmail.com](mailto:andreasgrumichedev@gmail.com)
 
 ---
 
