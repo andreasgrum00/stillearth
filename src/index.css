@@ -1,0 +1,150 @@
+:root {
+    /* Fundo e superfícies */
+    --color-background: #121212;
+    --color-surface: #1E1E1E;
+    --color-elevation-1: #2A2A2A;
+    --color-elevation-2: #333333;
+
+    /* Texto */
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #B3B3B3;
+    --color-text-disabled: #777777;
+
+    /* Cores principais */
+    --color-primary: #BB86FC;
+    --color-primary-variant: #985EFF;
+
+    /* Cores secundárias (accent) */
+    --color-secondary: #03DAC6;
+    --color-secondary-variant: #018786;
+
+    /* Erro, sucesso, alerta */
+    --color-error: #CF6679;
+    --color-success: #03C75A;
+    --color-warning: #FBC02D;
+
+    /* Bordas, separadores, etc */
+    --color-border: #3C3C3C;
+    --color-divider: #2F2F2F;
+
+    /* Sombras customizáveis se quiser usar */
+    --box-shadow-soft: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+
+    font-family: 'Inter';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
+
+.upperHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding: 15px;
+    border-bottom: 1px solid var(--color-border);
+
+    font-size: 10pt;
+
+    background-color: var(--color-background);
+}
+
+.lowerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-surface);
+    
+    padding: 10px;
+    border-top: 1px solid var(--color-border);
+
+    font-size: 10pt;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.locationContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: var(--color-primary-variant);
+    outline: none;
+    border: none;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    color: var(--color-text-primary);
+    font-size: 14pt;
+    font-family: 'Inter';
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.tag {
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        display: none;
+    }
+    .lowerHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
