@@ -48,6 +48,7 @@ A simple React site that shows you a random spot on Google Earth — places that
 - It then embeds a Google Earth view centered on that location.
 - Sometimes you'll land on a weird building, a giant rubber duck, or just... desert. That's the fun.
 - There’s no logic to make sure it’s interesting — the chaos *is* the point.
+- Available in [https://stillearth.vercel.app/](https://stillearth.vercel.app/)
 
 ---
 
